@@ -16,6 +16,14 @@ then
     popd
 else
     git clone https://github.com/SimpleITK/SimpleITK.git
+    $SimpleITK_Source=.
+fi
+
+if [ ! -z $SIMPLEITK_GIT_TAG ]
+then
+    pushd $SimpleITK_Source
+    git checkout $SIMPLEITK_GIT_TAG
+    popd
 fi
 
 mkdir -p $COREBINARYDIRECTORY
