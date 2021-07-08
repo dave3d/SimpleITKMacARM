@@ -19,9 +19,6 @@ cmake \
     -D "BUILD_SHARED_LIBS:BOOL=OFF" \
     -D "BUILD_DOCUMENTS:BOOL=OFF" \
     -D "WRAP_DEFAULT:BOOL=OFF" \
-    -D "WRAP_R:BOOL=OFF" \
-    -D "WRAP_PYTHON:BOOL=OFF" \
     $SimpleITK_Source/SuperBuild
 
 cmake --build . -- -j4
-
