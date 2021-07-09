@@ -22,13 +22,13 @@ echo $PY_DIR
 if [ -z "$SimpleITK_Source" ]
 then
     echo "No source"
-    SimpleITK_Source="~/SimpleITK"
+    SimpleITK_Source="/tmp/SimpleITK"
 fi
 echo $SimpleITK_Source
 
 if [ -z "$COREBINARYDIRECTORY" ]
 then
-    COREBINARYDIRECTORY="~/SimpleITK-build/"
+    COREBINARYDIRECTORY="/tmp/SimpleITK-build/"
 fi
 
 echo "COREBINARYDIRECTORY: ${COREBINARYDIRECTORY}"
